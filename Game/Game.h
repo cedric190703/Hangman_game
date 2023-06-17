@@ -15,7 +15,7 @@ public:
     int getAttempPlayer() { return this->player.getAttempt(); };
     void incPlayerAttemp() { this->player.increaseAttemp(); };
     void incPlayerScore() { this->player.increaseScore(); };
-    int checkEndGame(int error) { return error == 6 || 
+    int checkEndGame(int error) { return error == 6 ||
     this->player.getScore() == this->board->getSize() ? 1 : 0; };
     void displayLettersUsed() { this->board->displayLettersUsed(); };
     void displayCorrectLetters() { this->board->displayCorrectLetters(); };
